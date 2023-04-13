@@ -2,8 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   root to: "pages#home"
   get 'movies/read_csv'
-  get 'movies', to: 'movies#index'
-  # resources :movies, only: [:index]
+  resources :movies, only: [:index]
 
   # post 'movies/create_from_csv'
   # resources :movies, only:
