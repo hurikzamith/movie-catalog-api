@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
 
+#gem to handle token authentication
+gem 'simple_token_authentication'
+
 # to read csv file
 gem 'csv'
 
